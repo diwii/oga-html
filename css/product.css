@@ -1,5 +1,4 @@
 #productPage section {
-    /* margin-top: 0.5rem; */
     margin-left: 0.5rem;
 }
 #productPage section h1 {
@@ -21,7 +20,6 @@
     margin-right: 0.5rem;
 }
 #productPage section .buttonContainer {
-    /* z-index: 1; */
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -35,7 +33,6 @@
 #productPage section .buttonContainer .button.button-info {
     background-color: #EB8322;
     padding: 0 0.7rem;
-    /* font-size: 1rem; */
 }
 #productPage section .productWrapper .imageWrapper {
     position: relative;

@@ -42,7 +42,6 @@
 }
 .split:nth-of-type(odd) .contentWrapper div:nth-child(1) {
     text-align: right;
-    /* margin-right: 1rem; */
     border-right: solid 5px #11950E;
     padding-right: 1rem;
 }
@@ -63,7 +62,6 @@
 /* Pielīdzinam tekstu pa kreisi */
 .split:nth-of-type(even) .contentWrapper {
     text-align: left;
-    /* justify-content: flex-start; */
 }
 .split:nth-of-type(even) a:hover.contentWrapper {
     transform: translate(-1rem, 0);
@@ -73,7 +71,6 @@
 }
 .split:nth-of-type(even) .contentWrapper div:nth-child(1){
     text-align: left;
-    /* margin-left: 1rem; */
     border-left: solid 5px #EB8322;
     padding-left: 1rem;
 }

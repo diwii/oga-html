@@ -1,0 +1,93 @@
+.split {
+    display: flex;
+}
+.split > * {
+    flex-basis: 50%;
+}
+.split .contentWrapper {
+    align-self: center;
+
+    display: flex;
+    justify-content: space-around;
+
+    transition: .35s ease-in-out;
+}
+.contentWrapper div:nth-child(1) {
+    transition: .35s ease-in-out;
+}
+.split .imageWrapper img {
+    display: block;
+}
+/* Nepāra sekcijām tekstu līdzinām pa labi */
+.split:nth-of-type(odd) .contentWrapper {
+    text-align: right;
+}
+.split:nth-of-type(odd) a:hover.contentWrapper {
+    transform: translate(1rem, 0);
+}
+.split:nth-of-type(odd) a:hover.contentWrapper div:nth-child(1) {
+    border-right: solid 1rem #11950E; 
+}
+.split .contentWrapper .imageWrapper {
+    align-self: flex-end;
+}
+.split .contentWrapper .imageWrapper img {
+    object-fit: contain;
+    display: block;
+    width: unset;
+    height: unset;
+}
+.split:nth-of-type(odd) .contentWrapper .imageWrapper {
+    order: -1;
+}
+.split:nth-of-type(odd) .contentWrapper div:nth-child(1) {
+    text-align: right;
+    /* margin-right: 1rem; */
+    border-right: solid 5px #11950E;
+    padding-right: 1rem;
+}
+.split:nth-of-type(odd) p {
+    padding: 0.5rem 0 0 0.5rem;
+}
+.split:nth-of-type(odd) table {
+    margin-left: auto;
+}
+.split:nth-of-type(odd) td,
+.split:nth-of-type(odd) th {
+    padding: 0.2rem 0 0 0.5rem;
+}
+/* Katra otrā section attēls būs pirmais */
+.split:nth-of-type(even) .imageWrapper {
+    order: -1;
+}
+/* Pielīdzinam tekstu pa kreisi */
+.split:nth-of-type(even) .contentWrapper {
+    text-align: left;
+    /* justify-content: flex-start; */
+}
+.split:nth-of-type(even) a:hover.contentWrapper {
+    transform: translate(-1rem, 0);
+}
+.split:nth-of-type(even) a:hover.contentWrapper div:nth-child(1) {
+    border-left: solid 1rem #EB8322; 
+}
+.split:nth-of-type(even) .contentWrapper div:nth-child(1){
+    text-align: left;
+    /* margin-left: 1rem; */
+    border-left: solid 5px #EB8322;
+    padding-left: 1rem;
+}
+.split:nth-of-type(even) .contentWrapper .imageWrapper {
+    order: unset;
+    transform:rotate(180deg);
+}
+.split:nth-of-type(even) p {
+    padding: 0.5rem 0.5rem 0 0;
+}
+.split:nth-of-type(even) table {
+    margin-right: auto;
+}
+.split:nth-of-type(even) td,
+.split:nth-of-type(even) th {
+    padding: 0.2rem 0.5rem 0 0;
+}

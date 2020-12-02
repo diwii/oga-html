@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/split.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <!--fonts.google.com-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,900&display=swap" rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <!-- https://google.github.io/material-design-icons/ -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Oga</title>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <!-- Language menu -->
+        <div id="langMenu">
+            <ul>
+                <li>
+                    <a href="">LV</a>
+                </li>
+                <li>
+                    <a href="">EN</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Logo -->
+        <a href="index.html" id="logoWrapper">
+            <img src="images/logo.svg" alt="">
+        </a>
+        <button id="menuButton" onclick="action()">
+            <div id="openIcon">
+                <span>&bull;</span>
+                <span>&bull;</span>
+                <span>&bull;</span>
+            </div>
+            <img src="images/icons/cross.svg" id="closeIcon" class="hidden" alt="Close menu">
+        </button>
+        <!-- <button id="menuClose">
+            <img src="images/icons/cross.svg" alt="Close menu">
+        </button> -->
+        <!-- Main menu -->
+        <nav id="mainMenu">
+            <a href="about.html">Sīrupu darināšana</a>
+            <a href="darinajumi.html">Darinājumi</a>
+            <a href="receptes.html" class="activeLink">Receptes</a>
+            <a href="kontakti.html">Kontakti</a>
+            <div id="searchField">
+                <input type="text" id="search" size="15">
+                <button id="searchButton" class="material-icons">search</button>
+            </div>
+        </nav>
+    </div>
+    <!-- Main content of the site -->
+    <!-- Page Content -->
+    <main id="recipesPage">
+        <figure id="mainImage">
+            <div id="mainImageOverlay">
+                <h1>Ēdienu un dzērienu receptes</h1>
+            </div>
+            <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+            <img
+            srcset="images/recipes/recipesMainImage.jpeg 1920w,
+                    images/recipes/recipesMainImage-1024.jpeg 1024w,
+                    images/recipes/recipesMainImage-512.jpeg 512w"
+            sizes=" (max-width: 512px) 512px,
+                    (max-width: 1024px) 1024px,
+                    (min-width: 1025px) 1920px,
+                    1024px"
+            src="images/recipes/recipesMainImage.jpeg"
+
+            alt="Ēdieni un dzērieni"
+            />
+        </figure>
+        <section>
+            <header>
+                <h1 class="categoryTitle green">Ēdieni</h1>
+            </header>
+            <div class="split">
+                <div class="contentWrapper">
+                    <div>
+                        <h2>Biezpiena sacepums ar upeņu pastilām</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Daudzums</th>
+                                    <th>Sastāvdaļas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2 saujas</td>
+                                    <td>Upeņu pastilas</td>
+                                </tr>
+                                <tr>
+                                    <td>1kg</td>
+                                    <td>Biezpiens</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Olas</td>
+                                </tr>
+                                <tr>
+                                    <td>4 ēd.karot.</td>
+                                    <td>Skābais krējums</td>
+                                </tr>
+                                <tr>
+                                    <td>7 ēd.karot.</td>
+                                    <td>Manna</td>
+                                </tr>
+                                <tr>
+                                    <td>7 ēd.karot.</td>
+                                    <td>Cukurs</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Vaniļa</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Citrona miziņa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Lai sacepums būtu viendabīgāks, biezpienu izlaiž caur sietu. Biezpienu pēc tam liek bļodā, pievieno olas, skābo krējumu, mannu, cukuru, citrona miziņu un mazliet vaniļas garšai (pāksts sēkliņas, cukuru, ekstraktu vai pulveri). Visu samaisa, lai masa būtu vienmērīga.</p>
+                        <p>Pēc tam biezpiena masā viegli iemaisa upeņu pastilas. Ja mīkla ir visai šķidras konsistences, upeņu pastilas pirms pievienošanas nedaudz apviļā miltos. Tādā veidā pastilas nenogrims trauka pamatnē.</p>
+                    </div>
+                </div>
+                <div class="imageWrapper">
+                    <img
+                    srcset="images/recipes/biezpienaSacepums.jpeg 1024w,
+                            images/recipes/biezpienaSacepums-512.jpeg 512w"
+                    sizes=" (max-width: 1024px) 512px,
+                            (min-width: 1025px) 1024px,
+                            1024px"
+                    src="images/recipes/biezpienaSacepums.jpeg"
+        
+                    alt="Biezpiena sacepums, dekorēts ar dzērvenēm, piparmētru lapiņām, pārkaisīts ar pūdercukuru."
+                    />
+                </div>
+            </div>
+            <div class="split">
+                <div class="contentWrapper">
+                    <div>
+                        <h2>Smiltsērkšķu ķīselis ar putotu biezpienu</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Daudzums</th>
+                                    <th>Sastāvdaļas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>200g</td>
+                                    <td>Smiltsērkšķu ogas</td>
+                                </tr>
+                                <tr>
+                                    <td>500ml</td>
+                                    <td>Ūdens</td>
+                                </tr>
+                                <tr>
+                                    <td>250g</td>
+                                    <td>Cukurs</td>
+                                </tr>
+                                <tr>
+                                    <td>50g</td>
+                                    <td>Cietes</td>
+                                </tr>
+                                <tr>
+                                    <td>200g</td>
+                                    <td>Biezpiens</td>
+                                </tr>
+                                <tr>
+                                    <td>7 ēd.karot.</td>
+                                    <td>Cukurs</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Vaniļa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Katliņā uzvāra ūdeni, pievieno ogas un tās pavāra ~ 5 minūtes. Ogas izkāš un izberž caur sietu. Šo ūdeni ar izberzto ogu biezeni turpina vārīt un pievieno cukuru. Aukstā ūdenī izšķīdina kartupeļu cieti un pievieno ūdenim ar izberzto ogu biezeni.</p><p>Tiklīdz ķīselis uzmet burbuli, katliņu ņem nost no uguns. Ķīseli pilda porciju trauciņos un liek dzesēties. Saldo krējumu saputo ar cukuru un vaniļas cukuru. Putošanas beigās pievieno biezpienu. Kad smiltsērkšķu biezais ķīselis atdzisis, uz tā spiež biezpiena saldo masu, dekorē pārkaisot ar šokolādi.</p>
+                    </div>
+                </div>
+                <div class="imageWrapper">
+                    <img
+                    srcset="images/recipes/smiltserkskuKiselis.jpeg 1024w,
+                            images/recipes/smiltserkskuKiselis-512.jpeg 512w"
+                    sizes=" (max-width: 1024px) 512px,
+                            (min-width: 1025px) 1024px,
+                            1024px"
+                    src="images/recipes/smiltserkskuKiselis.jpeg"
+        
+                    alt="Divas glāzes smiltsērkšķu dzēriena uz dēlīša izkaisītas smiltsērkšķu ogas."
+                    />
+                </div>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h1 class="categoryTitle green">Dzērieni</h1>
+            </header>
+            <div class="split">
+                <div class="contentWrapper">
+                    <div>
+                        <h2>Aveņu nots</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Daudzums</th>
+                                    <th>Sastāvdaļas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>50ml</td>
+                                    <td>Džins</td>
+                                </tr>
+                                <tr>
+                                    <td>30ml</td>
+                                    <td>Aveņu sīrups</td>
+                                </tr>
+                                <tr>
+                                    <td>15ml</td>
+                                    <td>Citrona sula</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Ledus</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Šeikers</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Martini glāze</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Martini glāzē liek ledu un atstāj glāzi atdzesēties. Šeikerī ar ledu lejam sastāvdaļas. Kārtīgi sakrata un izkāš atdzesētajā martini glāzē.</p>
+                        <p>Longdrink variants: Ja izmantot lielāku glāzi var pievienot gāzētu ūdeni. Padarīs dzērienu vieglāku.</p>
+                    </div>
+                </div>
+                <div class="imageWrapper">
+                    <img
+                    srcset="images/home/cocktail.jpeg 1024w,
+                            images/home/cocktail-512.jpeg 512w"
+                    sizes=" (max-width: 1024px) 512px,
+                            (min-width: 1025px) 1024px,
+                            1024px"
+                    src="images/home/cocktail.jpeg"
+        
+                    alt="Aveņu nots - stiprs džina un aveņu kokteilis."
+                    title="Aveņu nots"
+                    />
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <div id="footer">
+        <h3>SIA &ldquo;Oga&rdquo; - 2020</h3>
+        <p>Sabile, Talsu novads, LV-3294, Latvija</p>
+        <div>
+            <a href=""><img src="images/icons/facebook.svg" alt=""></a>
+            <a href=""><img src="images/icons/instagram.svg" alt=""></a>
+            <a href="">info@biooga.lv</a>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

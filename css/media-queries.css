@@ -1,0 +1,159 @@
+@media all and (min-width: 1600px) {
+    html {
+        font-size: 24pt;
+    }
+}
+@media all and (max-width: 768px) {
+    html {
+        font-size: 18pt;
+    }
+}
+@media all and (max-width: 540px) {
+    html {
+        font-size: 16pt;
+    }
+    /* contactsPage section */
+    #contactsPage section input,
+    #contactsPage section textarea {
+        width: 80vw;
+    }
+}
+@media all and (max-width: 414px) {
+    /* Header */
+    #header {
+        position: fixed;
+        z-index: 1;
+        top:0;
+        height: 10vh;
+
+        justify-content: space-around;
+
+        background-color: white;
+    }
+    #langMenu a {
+        font-size: 0.7rem;
+    }
+    #logoWrapper {
+        flex-basis: 40%;
+    }
+    #menuButton {
+        display: block;
+    }
+    #mainMenu {
+        display: none;
+    }
+    #mainMenu.visible {
+        display: flex;
+        flex-flow: column;
+        position: fixed;
+        z-index: 1;
+        top: 10vh;
+        height: 90vh;
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: rgba(255,255,255,0.9);
+
+        padding-top: 5vh;
+    }
+    #mainMenu a {
+        margin-left: 15vw;
+        /* border-left: solid 1px green; */
+        font-size: 1.5rem;
+    }
+    #mainMenu .activeLink {
+        border-bottom: 0;
+        border-left: solid 5px #11950E;
+    }
+    #mainMenu #search {
+        display: inline-block;
+    }
+    #mainMenu #searchButton {
+        font-size: 1.5rem;
+    }
+    /* Main */
+    /* Add margin to compensate for fixed header */
+    main {
+        margin-top: 10vh;
+    }
+    #homePage #mainImage {
+        height: 90vh;
+    }
+    /* homePage Section */
+    #homePage section {
+        margin-top: 0;
+    }
+
+    /* The split */
+    .split {
+        flex-direction: column;
+    }
+    .split .contentWrapper {
+        align-self: unset;
+    }
+    .split .contentWrapper div:nth-child(1) {
+        padding-top: 1rem;
+    }
+    .split:nth-of-type(odd) .contentWrapper div:nth-child(1) {
+        padding: 0 0.5rem;
+    }
+    .split:nth-of-type(even) .contentWrapper div:nth-child(1) {
+        padding: 0 0.5rem;
+    }
+    .split .contentWrapper .imageWrapper {
+        padding: 1rem;
+    }
+    .split:nth-of-type(even) .imageWrapper {
+        order: -1;
+    }
+    .split:nth-of-type(odd) .imageWrapper {
+        order: -1;
+    }
+
+    /* productPage Section */
+    #productPage section .productWrapper {
+        width: 45vw;
+    }
+    #productPage section .buttonContainer .button {
+        font-size: 1.5rem;
+    }
+    #productPage section .buttonContainer .button.button-info {
+        padding: 0 0.8rem;
+    }
+
+    /* recipesPage section */
+    #recipesPage section header {
+        margin-bottom: 0;
+    }
+    #recipesPage .split {
+        min-height: 90vh;
+        margin-bottom: 0;
+    }
+    #recipesPage p {
+        font-size: 1rem;
+    }
+
+    /* contactsPage section */
+    #contactsPage section input,
+    #contactsPage section textarea {
+        width: 90vw;
+    }
+
+    /* Footer */
+    #footer {
+        flex-flow: column;
+    }
+}
+@media all and (max-width: 360px) {
+    html {
+        font-size: 14pt;
+    }
+    #header #langMenu li {
+        /* line-height: 1; */
+        display: inline-block;
+        padding-right: 0.5rem;
+        /* float: right; */
+    }
+    #mainMenu #search {
+        width: 50vw;
+    }
+}

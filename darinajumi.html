@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <!--fonts.google.com-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,900&display=swap" rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <!-- https://google.github.io/material-design-icons/ -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Oga</title>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <!-- Language menu -->
+        <div id="langMenu">
+            <ul>
+                <li>
+                    <a href="">LV</a>
+                </li>
+                <li>
+                    <a href="">EN</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Logo -->
+        <a href="index.html" id="logoWrapper">
+            <img src="images/logo.svg" alt="">
+        </a>
+        <button id="menuButton" onclick="action()">
+            <div id="openIcon">
+                <span>&bull;</span>
+                <span>&bull;</span>
+                <span>&bull;</span>
+            </div>
+            <img src="images/icons/cross.svg" id="closeIcon" class="hidden" alt="Close menu">
+        </button>
+        <!-- <button id="menuClose">
+            <img src="images/icons/cross.svg" alt="Close menu">
+        </button> -->
+        <!-- Main menu -->
+        <nav id="mainMenu">
+            <a href="about.html">Sīrupu darināšana</a>
+            <a href="darinajumi.html" class="activeLink">Darinājumi</a>
+            <a href="receptes.html">Receptes</a>
+            <a href="kontakti.html">Kontakti</a>
+            <div id="searchField">
+                <input type="text" id="search" size="15">
+                <button id="searchButton" class="material-icons">search</button>
+            </div>
+        </nav>
+    </div>
+    <!-- Main content of the site -->
+    <!-- Page Content -->
+    <main id="productPage">
+        <section>
+            <header>
+                <h1 class="categoryTitle orange">Sīrupi</h1>
+            </header>
+            <div class="productList">
+                <div class="productWrapper">
+                    <div class="imageWrapper">
+                        <div class="buttonContainer">
+                            <button class="button button-info">i</button>
+                            <button class="button button-add">+</button>
+                        </div>
+                        <img src="images/product/avenu-smilts-512.jpeg" alt="" />
+                    </div>
+                    <h2>Aveņu Smiltsērkšķu</h2>
+                    <p>3.99 &euro;</p>
+                </div>
+                <div class="productWrapper">
+                    <div class="imageWrapper">
+                        <div class="buttonContainer">
+                            <button class="button button-info">i</button>
+                            <button class="button button-add">+</button>
+                        </div>
+                        <img src="images/product/upenu-smilts-512.jpeg" alt="" />
+                    </div>
+                    <h2>Upeņu Smiltsērkšķu</h2>
+                    <p>3.99 &euro;</p>
+                </div>
+                <div class="productWrapper">
+                    <div class="imageWrapper">
+                        <div class="buttonContainer">
+                            <button class="button button-info">i</button>
+                            <button class="button button-add">+</button>
+                        </div>
+                        <img src="images/product/zemenu-smilts-512.jpeg" alt="" />
+                    </div>
+                    <h2>Zemeņu Smiltsērkšķu</h2>
+                    <p>3.99 &euro;</p>
+                </div>
+                <div class="productWrapper">
+                    <div class="imageWrapper">
+                        <div class="buttonContainer">
+                            <button class="button button-info">i</button>
+                            <button class="button button-add">+</button>
+                        </div>
+                        <img src="images/product/zemenu-512.jpeg" alt="" />
+                    </div>
+                    <h2>Zemeņu</h2>
+                    <p>3.99 &euro;</p>
+                </div>
+                <div class="productWrapper">
+                    <div class="imageWrapper">
+                        <div class="buttonContainer">
+                            <button class="button button-info">i</button>
+                            <button class="button button-add">+</button>
+                        </div>
+                        <img src="images/product/smiltserksku-512.jpeg" alt="" />
+                    </div>
+                    <h2>Smiltsērkšķu</h2>
+                    <p>3.99 &euro;</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h1 class="categoryTitle green">Pastilas</h1>
+            </header>
+            <div class="productList">
+                <div class="productWrapper">
+                    <div class="imageWrapper">
+                        <div class="buttonContainer">
+                            <button class="button button-info">i</button>
+                            <button class="button button-add">+</button>
+                        </div>
+                        <img src="images/product/avenu-pastilas-512.jpeg" alt="" />
+                    </div>
+                    <h2>Aveņu</h2>
+                    <p>2.99 &euro;</p>
+                </div>
+                <div class="productWrapper">
+                    <div class="imageWrapper">
+                        <div class="buttonContainer">
+                            <button class="button button-info">i</button>
+                            <button class="button button-add">+</button>
+                        </div>
+                        <img src="images/product/upenu-pastilas-512.jpeg" alt="" />
+                    </div>
+                    <h2>Upeņu</h2>
+                    <p>2.99 &euro;</p>
+                </div>
+                <div class="productWrapper">
+                    <div class="imageWrapper">
+                        <div class="buttonContainer">
+                            <button class="button button-info">i</button>
+                            <button class="button button-add">+</button>
+                        </div>
+                        <img src="images/product/dazadas-pastilas-512.jpeg" alt="" />
+                    </div>
+                    <h2>Zemeņu</h2>
+                    <p>2.99 &euro;</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <div id="footer">
+        <h3>SIA &ldquo;Oga&rdquo; - 2020</h3>
+        <p>Sabile, Talsu novads, LV-3294, Latvija</p>
+        <div>
+            <a href=""><img src="images/icons/facebook.svg" alt=""></a>
+            <a href=""><img src="images/icons/instagram.svg" alt=""></a>
+            <a href="">info@biooga.lv</a>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

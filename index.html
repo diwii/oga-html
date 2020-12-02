@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/split.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <!--fonts.google.com-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,900&display=swap" rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <!-- https://google.github.io/material-design-icons/ -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Oga</title>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <!-- Language menu -->
+        <div id="langMenu">
+            <ul>
+                <li>
+                    <a href="">LV</a>
+                </li>
+                <li>
+                    <a href="">EN</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Logo -->
+        <a href="index.html" id="logoWrapper">
+            <img src="images/logo.svg" alt="">
+        </a>
+        <button id="menuButton" onclick="action()">
+            <div id="openIcon">
+                <span>&bull;</span>
+                <span>&bull;</span>
+                <span>&bull;</span>
+            </div>
+            <img src="images/icons/cross.svg" id="closeIcon" class="hidden" alt="Close menu">
+        </button>
+        <!-- <button id="menuClose">
+            <img src="images/icons/cross.svg" alt="Close menu">
+        </button> -->
+        <!-- Main menu -->
+        <nav id="mainMenu">
+            <a href="about.html">Sīrupu darināšana</a>
+            <a href="darinajumi.html">Darinājumi</a>
+            <a href="receptes.html">Receptes</a>
+            <a href="kontakti.html">Kontakti</a>
+            <div id="searchField">
+                <input type="text" id="search" size="15">
+                <button id="searchButton" class="material-icons">search</button>
+            </div>
+        </nav>
+    </div>
+    <!-- Main content of the site -->
+    <!-- Page Content -->
+    <main id="homePage">
+        <figure id="mainImage">
+            <div id="mainImageOverlay">
+                <h1>Augstas kvalitātes ogu produkcijas ražošana</h1>
+                <div id="buttonContainer">
+                    <a href="darinajumi.html" id="produkcija" class="button">Produkcija</a>
+                    <a href="tel:+371 09999999#" id="zvanit" class="button">
+                        <p>Zvanīt</p>
+                        <p>+371 28282893</p>
+                    </a>
+                </div>
+            </div>
+            <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+            <img
+            srcset="images/home/homeMainImage.jpeg 1920w,
+                    images/home/homeMainImage-1024.jpeg 1024w,
+                    images/home/homeMainImage-512.jpeg 512w"
+            sizes=" (max-width: 512px) 512px,
+                    (max-width: 1024px) 1024px,
+                    (min-width: 1025px) 1920px,
+                    1024px"
+            src="images/home/homeMainImage.jpeg"
+
+            alt="Uzņēmuma produkcija: pastilas, sīrupu pudelītes tautiskā noskaņojumā."
+            title="Uzņēmuma produkcija."
+            />
+        </figure>
+        <section class="split">
+            <a href="about.html" class="contentWrapper">
+                <div>
+                    <h2>Ogu audzēšana</h2>
+                    <ul>
+                        <li>Smiltsērkšķu</li>
+                        <li>Aveņu</li>
+                        <li>Zemeņu</li>
+                        <li>Upeņu</li>
+                    </ul>
+                </div>
+                <div class="imageWrapper">
+                    <img src="images/icons/triangle-green.svg" alt="" title="">
+                </div>
+            </a>
+            <a href="about.html" class="imageWrapper">
+                <img
+                srcset="images/home/ogas.jpeg 1024w,
+                        images/home/ogas-512.jpeg 512w"
+                sizes=" (max-width: 1024px) 512px,
+                        (min-width: 1025px) 1024px,
+                        1024px"
+                src="images/home/ogas.jpeg"
+    
+                alt="Smiltsērkšķu ogas"
+                />
+            </a>
+        </section>
+        <section class="split">
+            <a href="receptes.html" class="contentWrapper">
+                <div>
+                    <h2>Receptes</h2>
+                    <ul>
+                        <li>Aveņu nots</li>
+                        <li>Upeņu pastilu biezpiena sacepums</li>
+                        <li>Smiltsērkšķu ķīselis ar putotu biezpienu</li>
+                    </ul>
+                </div>
+                <div class="imageWrapper">
+                    <img src="images/icons/triangle-orange.svg" alt="">
+                </div>
+            </a>
+            <a href="receptes.html" class="imageWrapper">
+                <img
+                srcset="images/home/cocktail.jpeg 1024w,
+                        images/home/cocktail-512.jpeg 512w"
+                sizes=" (max-width: 1024px) 512px,
+                        (min-width: 1025px) 1024px,
+                        1024px"
+                src="images/home/cocktail.jpeg"
+    
+                alt="Aveņu nots - stiprs džina un aveņu kokteilis."
+                title="Aveņu nots"
+                />
+            </a>
+        </section>
+    </main>
+    <!-- Footer -->
+    <div id="footer">
+        <h3>SIA &ldquo;Oga&rdquo; - 2020</h3>
+        <p>Sabile, Talsu novads, LV-3294, Latvija</p>
+        <div>
+            <a href=""><img src="images/icons/facebook.svg" alt=""></a>
+            <a href=""><img src="images/icons/instagram.svg" alt=""></a>
+            <a href="">info@biooga.lv</a>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

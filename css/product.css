@@ -1,0 +1,45 @@
+#productPage section {
+    /* margin-top: 0.5rem; */
+    margin-left: 0.5rem;
+}
+#productPage section h1 {
+    margin-bottom: 0.5rem;
+}
+#productPage section h2 {
+    font-size: 1rem;
+}
+#productPage section p {
+    text-align: right;
+    font-size: 0.7rem;
+}
+#productPage section .productList {
+    display: flex;
+    flex-wrap: wrap;
+}
+#productPage section .productWrapper {
+    width: 22.5vw;
+    margin-right: 0.5rem;
+}
+#productPage section .buttonContainer {
+    /* z-index: 1; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0.5rem;
+    padding: 0 0.5rem;
+}
+#productPage section .buttonContainer .button-add {
+    background-color: #11950e;
+}
+#productPage section .buttonContainer .button.button-info {
+    background-color: #EB8322;
+    padding: 0 0.7rem;
+    /* font-size: 1rem; */
+}
+#productPage section .productWrapper .imageWrapper {
+    position: relative;
+}
+#productPage section .productWrapper .imageWrapper img {
+    display: block;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <!--fonts.google.com-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,900&display=swap" rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <!-- https://google.github.io/material-design-icons/ -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Oga</title>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <!-- Language menu -->
+        <div id="langMenu">
+            <ul>
+                <li>
+                    <a href="">LV</a>
+                </li>
+                <li>
+                    <a href="">EN</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Logo -->
+        <a href="index.html" id="logoWrapper">
+            <img src="images/logo.svg" alt="">
+        </a>
+        <button id="menuButton" onclick="action()">
+            <div id="openIcon">
+                <span>&bull;</span>
+                <span>&bull;</span>
+                <span>&bull;</span>
+            </div>
+            <img src="images/icons/cross.svg" id="closeIcon" class="hidden" alt="Close menu">
+        </button>
+        <!-- <button id="menuClose">
+            <img src="images/icons/cross.svg" alt="Close menu">
+        </button> -->
+        <!-- Main menu -->
+        <nav id="mainMenu">
+            <a href="about.html" class="activeLink">Sīrupu darināšana</a>
+            <a href="darinajumi.html">Darinājumi</a>
+            <a href="receptes.html">Receptes</a>
+            <a href="kontakti.html">Kontakti</a>
+            <div id="searchField">
+                <input type="text" id="search" size="15">
+                <button id="searchButton" class="material-icons">search</button>
+            </div>
+        </nav>
+    </div>
+    <!-- Main content of the site -->
+    <!-- Page Content -->
+    <main id="singlePage">
+        <figure id="mainImage">
+            <div id="mainImageOverlay">
+                <h1>Uzņēmuma darbības virziens un sniedzamie pakalpojumi.</h1>
+            </div>
+            <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+            <img
+            srcset="images/about/aboutMainImage.jpeg 1920w,
+                    images/about/aboutMainImage-1024.jpeg 1024w,
+                    images/about/aboutMainImage-512.jpeg 512w"
+            sizes=" (max-width: 512px) 512px,
+                    (max-width: 1024px) 1024px,
+                    (min-width: 1025px) 1920px,
+                    1024px"
+            src="images/about/aboutMainImage.jpeg"
+
+            alt="Uzņēmuma produkcija: pastilas, sīrupu pudelītes tautiskā noskaņojumā."
+            title="Uzņēmuma produkcija."
+            />
+        </figure>
+        <section>
+            <p>
+                Uzņēmums SIA “Oga” nodarbojas ar mājražošanu – audzē smiltsērkšķus, avenes, upenes, zemenes u.c. ogas un augļus, kurus pārstrādā un iegūst sīrupus, sulas, pastilas  u.c. izstrādājumus. Uzņēmums piedāvā iespēju apciemot saimniecību un iepazīties ar ražošanas procesu, kā arī apskatīt ogu un augļu dārzus. SIA “ Oga” piedāvā savu produktu degustācijas.
+            </p>
+            <p>
+                SIA “Oga” ir nepieciešama mājaslapa, lai popularizētu sevis gatavotos, veselīgos produktus, lai klients varētu piedāvājumu un jaunākās aktualitātes apskatīt sev ērtā laikā un vietā. Saistībā ar pavasarī izsludinātajiem ierobežojumiem valstī, uzņēmums nespēja pilnvērtīgi funkcionēt, jo tika apturēta izbraukumu tirdzniecība. Mājaslapas esamība nodrošina tirdzniecību internetā, kā arī jaunu klientu piesaisti. Tā nodrošina arī produkcijas atpazīstamību.
+            </p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <div id="footer">
+        <h3>SIA &ldquo;Oga&rdquo; - 2020</h3>
+        <p>Sabile, Talsu novads, LV-3294, Latvija</p>
+        <div>
+            <a href=""><img src="images/icons/facebook.svg" alt=""></a>
+            <a href=""><img src="images/icons/instagram.svg" alt=""></a>
+            <a href="">info@biooga.lv</a>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

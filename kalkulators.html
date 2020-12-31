@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/split.css">
+    <link rel="stylesheet" href="css/calculator.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <!--fonts.google.com-->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,900&display=swap" rel="stylesheet">
@@ -40,10 +42,10 @@
         </button> -->
         <!-- Main menu -->
         <nav id="mainMenu">
-            <a href="about.html" class="activeLink">Sīrupu darināšana</a>
+            <a href="about.html">Sīrupu darināšana</a>
             <a href="darinajumi.html">Darinājumi</a>
             <a href="receptes.html">Receptes</a>
-            <a href="kalkulators.html">Kalkulators</a>
+            <a href="kalkulators.html" class="activeLink">Kalkulators</a>
             <a href="kontakti.html">Kontakti</a>
             <div id="searchField">
                 <input type="text" id="search" size="15">
@@ -56,32 +58,70 @@
     <main id="singlePage">
         <figure id="mainImage">
             <div id="mainImageOverlay">
-                <h1>Uzņēmuma darbības virziens un sniedzamie pakalpojumi.</h1>
+                <h1>Līzinga kalkulātors</h1>
             </div>
             <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
             <img
-            srcset="images/about/aboutMainImage.jpeg 1920w,
-                    images/about/aboutMainImage-1024.jpeg 1024w,
-                    images/about/aboutMainImage-512.jpeg 512w"
+            srcset="images/kalkulators/kalkulatorsMainImage.jpeg 1920w,
+                    images/kalkulators/kalkulatorsMainImage-1024.jpeg 1024w,
+                    images/kalkulators/kalkulatorsMainImage-512.jpeg 512w"
             sizes=" (max-width: 512px) 512px,
                     (max-width: 1024px) 1024px,
                     (min-width: 1025px) 1920px,
                     1024px"
-            src="images/about/aboutMainImage.jpeg"
+            src="images/kalkulators/kalkulatorsMainImage.jpeg"
 
-            alt="Uzņēmuma produkcija: pastilas, sīrupu pudelītes tautiskā noskaņojumā."
-            title="Uzņēmuma produkcija."
+            alt="Attēlota daļa no kalkulātora."
+            title="Kalkulators."
             />
         </figure>
         <section>
             <!-- Validators vēlas, lai izmantoju hedingu te, bet es viņu esmu novietojis figūrā(iepriekšējā elementā) -->
-            <h2 class="hidden">Uzņēmuma darbības virziens un sniedzamie pakalpojumi.</h2>
-            <p>
-                Uzņēmums SIA “Oga” nodarbojas ar mājražošanu – audzē smiltsērkšķus, avenes, upenes, zemenes u.c. ogas un augļus, kurus pārstrādā un iegūst sīrupus, sulas, pastilas  u.c. izstrādājumus. Uzņēmums piedāvā iespēju apciemot saimniecību un iepazīties ar ražošanas procesu, kā arī apskatīt ogu un augļu dārzus. SIA “ Oga” piedāvā savu produktu degustācijas.
-            </p>
-            <p>
-                SIA “Oga” ir nepieciešama mājaslapa, lai popularizētu sevis gatavotos, veselīgos produktus, lai klients varētu piedāvājumu un jaunākās aktualitātes apskatīt sev ērtā laikā un vietā. Saistībā ar pavasarī izsludinātajiem ierobežojumiem valstī, uzņēmums nespēja pilnvērtīgi funkcionēt, jo tika apturēta izbraukumu tirdzniecība. Mājaslapas esamība nodrošina tirdzniecību internetā, kā arī jaunu klientu piesaisti. Tā nodrošina arī produkcijas atpazīstamību.
-            </p>
+            <h2 class="hidden">Līzinga kalkulātors</h2>
+            
+            <div class="split">
+                <form action="kalkulators.html" id="calculator">
+                    <label for="sum">Summa:</label>
+                    <input type="number" name="sum" id="sum" min="100" max="1000000" required>
+                    <div class="error">
+                        <p></p>
+                    </div>
+                    
+                    <label for="percent">Gada procentu likme:</label>
+                    <select name="percent" id="percent" required>
+                        <option value="" selected hidden>Izvēlaties procentu</option>
+                        <option value="7">7%</option>
+                        <option value="10">10%</option>
+                        <option value="15">15%</option>
+                    </select>
+                    <div class="error">
+                        <p></p>
+                    </div>
+
+                    <label for="term">Līzinga termiņš:</label>
+                    <select name="term" id="term" required>
+                        <option value="" selected hidden>Izvēlaties termiņu</option>
+                        <option value="6">6 mēn.</option>
+                        <option value="12">12 mēn.</option>
+                        <option value="18">18 mēn.</option>
+                        <option value="24">2 gadi</option>
+                        <option value="60">5 gadi</option>
+                        <option value="84">7 gadi</option>
+                    </select>
+                    <div class="error">
+                        <p></p>
+                    </div>
+
+                    <input type="submit" class="button" value="Aprēķināt" />
+                </form>
+                <!-- Rezultāts -->
+                <div>
+                    <h3>Ikmēneša maksājums: </h3>
+                    <p id="monthly"> </p>
+                    <h3>Kopējā izmaksājamā summa: </h3>
+                    <p id="total"> </p>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Footer -->
@@ -95,5 +135,6 @@
         </div>
     </div>
     <script src="js/main.js"></script>
+    <script src="js/kalkulators.js"></script>
 </body>
 </html>

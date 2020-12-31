@@ -1,0 +1,36 @@
+#calculator {
+    margin-bottom: 0.5rem;
+}
+#calculator input {
+    padding: 0.2rem;
+    width: 50%;
+}
+#calculator input[type=submit] {
+    font-size: 1rem;
+    line-height: 0;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+#calculator select {
+    padding: 0.2rem;
+    font-size: 0.7rem;
+    width: 50%;
+}
+#calculator label{
+    margin-top:0.5rem;
+}
+#calculator .error p {
+    font-size: 0.7rem;
+    padding: 0;
+    color: #531b05;
+}
+
+@media all and (max-width: 414px) {
+    #calculator input {
+        padding: 0.2rem;
+        width: 100%;
+    }
+    #calculator select {
+        width: 100%;
+    }
+}
